@@ -2430,8 +2430,8 @@ docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> 
 </tr>
 <tr>
 <td><code>N8N_API_KEY</code></td>
-<td><code>replace-me</code></td>
-<td>n8n API key for authenticating workflow API calls</td>
+<td><em>(empty)</em></td>
+<td>n8n API key — <strong>required</strong> for workflow scheduling. Generate in n8n: Settings &gt; API &gt; Create API Key.</td>
 </tr>
 <tr>
 <td><code>WEB_API_URL</code></td>
@@ -2443,28 +2443,14 @@ docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> 
 <td><code>http://host.docker.internal:5678</code></td>
 <td>n8n base URL served to the frontend container</td>
 </tr>
+<tr>
+<td><code>POSTGRES_PASSWORD</code></td>
+<td>set_me</td>
+<td>PostgreSQL password. <strong>Change this</strong> for any non-local deployment.</td>
+</tr>
 </tbody>
 </table>
 <h3 id="appsettingsjson-advanced">appsettings.json (Advanced)<a class="headerlink" href="#appsettingsjson-advanced" title="Permanent link">&para;</a></h3>
-<p>Key settings in <code>Ghosts.Api/appsettings.json</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;ConnectionStrings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;DefaultConnection&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Host=ghosts-postgres;Port=5432;Database=ghosts;User Id=ghosts;Password=scotty@1;&quot;</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;ApplicationSettings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;OfflineAfterMinutes&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;MatchMachinesBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;name&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;AnimatorSettings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;Animations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;IsEnabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;CorsPolicy&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;Origins&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;http://localhost:4200&quot;</span><span class="p">]</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
 <p>Override values for production via environment variables or a mounted <code>appsettings.Production.json</code>.</p>
 <hr />
 <h2 id="managing-the-stack">Managing the Stack<a class="headerlink" href="#managing-the-stack" title="Permanent link">&para;</a></h2>
