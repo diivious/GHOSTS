@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../../assets/img/ghosts_new.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -535,6 +535,8 @@
       
         
       
+        
+      
     
     
     
@@ -642,6 +644,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../handle-cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Running a Single Handler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -690,10 +720,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
         
           
-          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
             
   
   
@@ -711,8 +741,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -892,10 +922,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_6" >
         
           
-          <label class="md-nav__link" for="__nav_4_3_6" id="__nav_4_3_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_4_6" id="__nav_4_4_6_label" tabindex="0">
             
   
   
@@ -913,8 +943,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3_6">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1294,10 +1324,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_15" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_15" >
         
           
-          <label class="md-nav__link" for="__nav_4_3_15" id="__nav_4_3_15_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_4_15" id="__nav_4_4_15_label" tabindex="0">
             
   
   
@@ -1315,8 +1345,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3_15">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_15">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1756,6 +1786,8 @@
       
         
       
+        
+      
     
     
     
@@ -1808,6 +1840,34 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../animator/personas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NPC Persona Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1999,66 +2059,67 @@
 
 <h1 id="database-handler-configuration">Database Handler Configuration<a class="headerlink" href="#database-handler-configuration" title="Permanent link">&para;</a></h1>
 <p>The sample configuration below is also available in the [GHOSTS GitHub repository](<a href="https://github.com/cmu-sei/GHOSTS/blob/master/src/Ghosts.Client.Windows/Sample%20Timelines/Database.json">https://github.com/cmu-sei/GHOSTS/blob/master/src/Ghosts.Client.Windows/Sample%20Timelines/Database.json</a></p>
-<p>The database handler is used to perform insert, query, and delete operations to one or more MySql database servers. The configuration can be used specify a simplified schema with multiple databases, each with multiple tables, each table with multiple columns.</p>
+<p>The database handler is used to perform insert, query, and delete operations to one or more MySql or Microsoft SQL database servers. The configuration can be used specify a simplified schema with multiple databases, each with multiple tables, each table with multiple columns.</p>
 <p>When the handler is executed, a random database is chosen along with a random table from that database. This DB/Table is queried for row count, and if empty, 10 rows are generated as initial content.  If non-empty, either an insert operation (one row inserted), delete (first row is deleted), or query operation is performed (a maximum of <code>query-limit</code> rows are returned and written to the Ghosts log file).  The query starts at a random offset from within the rows.  If the <code>max-rows</code> parameter is non-zero then when this number of rows is reached a deletion operation is forced.</p>
 <p>A sample timeline is shown below:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;Status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Run&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;TimeLineHandlers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"Status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Run"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"TimeLineHandlers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;HandlerType&quot;</span><span class="p">:</span><span class="w">  </span><span class="s2">&quot;Database&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;HandlerArgs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;delay-jitter&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;insert-probability&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;delete-probability&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;query-probability&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;query-limit&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;max-rows&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3306</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;DatabaseTargets&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">           </span><span class="nt">&quot;Version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0&quot;</span><span class="p">,</span>
-<span class="w">             </span><span class="nt">&quot;Data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">               </span><span class="nt">&quot;&lt;db_key1&gt;&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                  </span><span class="nt">&quot;Username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;a_user&quot;</span><span class="p">,</span>
-<span class="w">                  </span><span class="nt">&quot;Password&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;Base64 Encoded Password&gt;&quot;</span><span class="p">,</span>
-<span class="w">                  </span><span class="nt">&quot;Databases&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="nt">"HandlerType"</span><span class="p">:</span><span class="w">  </span><span class="s2">"Database"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"HandlerArgs"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"delay-jitter"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"insert-probability"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"delete-probability"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"query-probability"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"query-limit"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"max-rows"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"ismssql"</span><span class="p">:</span><span class="w"> </span><span class="s2">"false"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"port"</span><span class="p">:</span><span class="w"> </span><span class="mi">3306</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"DatabaseTargets"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">           </span><span class="nt">"Version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="p">,</span>
+<span class="w">             </span><span class="nt">"Data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">               </span><span class="nt">"&lt;db_key1&gt;"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                  </span><span class="nt">"Username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a_user"</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">"Password"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;Base64 Encoded Password&gt;"</span><span class="p">,</span>
+<span class="w">                  </span><span class="nt">"Databases"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">                    </span><span class="p">{</span>
-<span class="w">                      </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AcmeInc&quot;</span><span class="p">,</span>
-<span class="w">                      </span><span class="nt">&quot;Tables&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                      </span><span class="nt">"Name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AcmeInc"</span><span class="p">,</span>
+<span class="w">                      </span><span class="nt">"Tables"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">                        </span><span class="p">{</span>
-<span class="w">                          </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Employees&quot;</span><span class="p">,</span>
-<span class="w">                          </span><span class="nt">&quot;Columns&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                          </span><span class="nt">"Name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Employees"</span><span class="p">,</span>
+<span class="w">                          </span><span class="nt">"Columns"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">                            </span><span class="p">{</span>
-<span class="w">                              </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Name&quot;</span><span class="p">,</span>
-<span class="w">                              </span><span class="nt">&quot;ContentHint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;name&quot;</span>
+<span class="w">                              </span><span class="nt">"Name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Name"</span><span class="p">,</span>
+<span class="w">                              </span><span class="nt">"ContentHint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"name"</span>
 <span class="w">                            </span><span class="p">},</span>
 <span class="w">                            </span><span class="p">{</span>
-<span class="w">                              </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Title&quot;</span><span class="p">,</span>
-<span class="w">                              </span><span class="nt">&quot;ContentHint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;title&quot;</span>
+<span class="w">                              </span><span class="nt">"Name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Title"</span><span class="p">,</span>
+<span class="w">                              </span><span class="nt">"ContentHint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"title"</span>
 <span class="w">                            </span><span class="p">},</span>
 <span class="w">                            </span><span class="p">{</span>
-<span class="w">                              </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SSN&quot;</span><span class="p">,</span>
-<span class="w">                              </span><span class="nt">&quot;ContentHint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ssn&quot;</span>
+<span class="w">                              </span><span class="nt">"Name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SSN"</span><span class="p">,</span>
+<span class="w">                              </span><span class="nt">"ContentHint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ssn"</span>
 <span class="w">                            </span><span class="p">},</span>
 <span class="w">                            </span><span class="p">{</span>
-<span class="w">                              </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LastPerformanceRating&quot;</span><span class="p">,</span>
-<span class="w">                              </span><span class="nt">&quot;Range&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0,10&quot;</span>
+<span class="w">                              </span><span class="nt">"Name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LastPerformanceRating"</span><span class="p">,</span>
+<span class="w">                              </span><span class="nt">"Range"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0,10"</span>
 <span class="w">                            </span><span class="p">},</span>
 <span class="w">                            </span><span class="p">{</span>
-<span class="w">                              </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RemoteWorkEnabled&quot;</span><span class="p">,</span>
-<span class="w">                              </span><span class="nt">&quot;Choice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;yes,no,pending&quot;</span>
+<span class="w">                              </span><span class="nt">"Name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RemoteWorkEnabled"</span><span class="p">,</span>
+<span class="w">                              </span><span class="nt">"Choice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"yes,no,pending"</span>
 <span class="w">                            </span><span class="p">},</span>
 <span class="w">                            </span><span class="p">{</span>
-<span class="w">                              </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Phone&quot;</span><span class="p">,</span>
-<span class="w">                              </span><span class="nt">&quot;ContentHint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;phone&quot;</span>
+<span class="w">                              </span><span class="nt">"Name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Phone"</span><span class="p">,</span>
+<span class="w">                              </span><span class="nt">"ContentHint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"phone"</span>
 <span class="w">                            </span><span class="p">},</span>
 <span class="w">                            </span><span class="p">{</span>
-<span class="w">                              </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Street&quot;</span><span class="p">,</span>
-<span class="w">                              </span><span class="nt">&quot;ContentHint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;street&quot;</span>
+<span class="w">                              </span><span class="nt">"Name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Street"</span><span class="p">,</span>
+<span class="w">                              </span><span class="nt">"ContentHint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"street"</span>
 <span class="w">                            </span><span class="p">},</span>
 <span class="w">                            </span><span class="p">{</span>
-<span class="w">                              </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;City&quot;</span><span class="p">,</span>
-<span class="w">                              </span><span class="nt">&quot;ContentHint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;city&quot;</span>
+<span class="w">                              </span><span class="nt">"Name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"City"</span><span class="p">,</span>
+<span class="w">                              </span><span class="nt">"ContentHint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"city"</span>
 <span class="w">                            </span><span class="p">}</span>
 <span class="w">                          </span><span class="p">]</span>
 <span class="w">                        </span><span class="p">}</span>
@@ -2070,23 +2131,25 @@
 <span class="w">              </span><span class="p">}</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;UtcTimeOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;00:00:00&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;UtcTimeOff&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;24:00:00&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;Loop&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;TimeLineEvents&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="nt">"UtcTimeOn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"00:00:00"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"UtcTimeOff"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24:00:00"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"Loop"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"TimeLineEvents"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">          </span><span class="nt">&quot;Command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;random&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nt">&quot;CommandArgs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">             </span><span class="s2">&quot;&lt;IP_of_target_db_key1&gt;|&lt;db_key1&gt;&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">"Command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"random"</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">"CommandArgs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">             </span><span class="s2">"&lt;IP_of_target_db_key1&gt;|&lt;db_key1&gt;"</span><span class="p">,</span>
 <span class="w">          </span><span class="p">],</span>
-<span class="w">          </span><span class="nt">&quot;DelayAfter&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">20000</span><span class="p">,</span>
-<span class="w">          </span><span class="nt">&quot;DelayBefore&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">          </span><span class="nt">"DelayAfter"</span><span class="p">:</span><span class="w"> </span><span class="mi">20000</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">"DelayBefore"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">      </span><span class="p">]</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+The <code>ismssql</code> parameter should be <code>"false"</code> to target a MySql server, and <code>"true"</code> to target a Microsoft SQL server. If the <code>port</code> parameter is missing, then it is set to the default MySql server port if <code>ismssql</code> is <code>"false"</code>,  and to the default Microsoft SQL Server port if <code>ismssql</code> is <code>"true"</code>.</p>
+<p>If the <code>ismssql</code> parameter is missing then it is assumed to be <code>"false"</code>.</p>
 <p>The <code>DatabaseTargets[Data]</code> entry in the <code>HandlerArgs</code> is a dictionary, with each key/value specifying a target MySQL database. The <code>Username</code>, <code>Password</code> specify the credentials used for database access, and the <code>Databases</code> entry is a list of simplified database schema that can be accessed. It is assumed that this schema exists on the MySql server and is assumed to have primary key named <code>id</code> as the first column that is an auto-incrementing integer.</p>
 <p>Each entry in <code>Tables</code> has a list of <code>Columns</code> that describe the column entries. Each table is assumed to be comprised entirely of either VARCHAR(255) string data or INT data.</p>
 <p>The <code>Column</code> entry can have a <code>ContentHint</code> with a string that identifies a category that is used from the default database corpus in Ghosts (a file named <code>database-content.csv</code>).  The supported <code>ContentHint</code> categories are:</p>
@@ -2228,7 +2291,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

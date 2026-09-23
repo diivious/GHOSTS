@@ -16,14 +16,14 @@
         <link rel="prev" href="../core/ui/">
       
       
-        <link rel="next" href="jobs/">
+        <link rel="next" href="personas/">
       
       
         
       
       
       <link rel="icon" href="../assets/img/ghosts_new.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -31,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -541,6 +541,8 @@
       
         
       
+        
+      
     
     
     
@@ -648,6 +650,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../core/handle-cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Running a Single Handler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -696,10 +726,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
         
           
-          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
             
   
   
@@ -717,8 +747,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -898,10 +928,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_6" >
         
           
-          <label class="md-nav__link" for="__nav_4_3_6" id="__nav_4_3_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_4_6" id="__nav_4_4_6_label" tabindex="0">
             
   
   
@@ -919,8 +949,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3_6">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1300,10 +1330,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_15" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_15" >
         
           
-          <label class="md-nav__link" for="__nav_4_3_15" id="__nav_4_3_15_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_4_15" id="__nav_4_4_15_label" tabindex="0">
             
   
   
@@ -1321,8 +1351,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3_15">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_15">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1764,6 +1794,8 @@
       
         
       
+        
+      
     
     
     
@@ -1819,6 +1851,34 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="personas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NPC Persona Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -2152,20 +2212,20 @@
 <h2 id="generating-npcs-via-api">Generating NPCs via API<a class="headerlink" href="#generating-npcs-via-api" title="Permanent link">&para;</a></h2>
 <p><strong>Generate NPCs programmatically:</strong></p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:5000/api/npcs/generate<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
-<span class="s1">    &quot;count&quot;: 50,</span>
-<span class="s1">    &quot;campaign&quot;: &quot;Exercise 2024&quot;,</span>
-<span class="s1">    &quot;enclave&quot;: &quot;Brigade HQ&quot;,</span>
-<span class="s1">    &quot;team&quot;: &quot;Operations&quot;</span>
-<span class="s1">  }&#39;</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">'{</span>
+<span class="s1">    "count": 50,</span>
+<span class="s1">    "campaign": "Exercise 2024",</span>
+<span class="s1">    "enclave": "Brigade HQ",</span>
+<span class="s1">    "team": "Operations"</span>
+<span class="s1">  }'</span>
 </code></pre></div>
 <p><strong>Retrieve NPCs:</strong></p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>http://localhost:5000/api/npcs
 </code></pre></div>
 <p>See the Swagger documentation at <code>http://localhost:5000/swagger</code> for complete API details.</p>
 <h2 id="npc-data-fields">NPC Data Fields<a class="headerlink" href="#npc-data-fields" title="Permanent link">&para;</a></h2>
-<p>Animator generates extensive data for each NPC. Key fields include:</p>
+<p>Animator generates extensive data for each NPC. Key categories include:</p>
 <table>
 <thead>
 <tr>
@@ -2176,46 +2236,50 @@
 <tbody>
 <tr>
 <td><strong>Identity</strong></td>
-<td>First name, last name, middle name, gender, date of birth, SSN</td>
+<td>First/middle/last name, biological sex, date of birth, email, phones, CAC, photo</td>
 </tr>
 <tr>
 <td><strong>Contact</strong></td>
-<td>Email, phone, address, city, state, ZIP, country</td>
+<td>Address(es): street, city, state, postal code</td>
 </tr>
 <tr>
 <td><strong>Employment</strong></td>
-<td>Employer, job title, department, salary, hire date, employee ID</td>
+<td>Full job history: employer, job title, department, salary, dates, manager</td>
 </tr>
 <tr>
 <td><strong>Financial</strong></td>
-<td>Bank name, account number, routing number, credit score, assets</td>
+<td>Net worth, total debt, credit cards</td>
 </tr>
 <tr>
 <td><strong>Education</strong></td>
-<td>Degrees, institutions, graduation dates, major/minor</td>
+<td>Degrees, degree level, major, school</td>
 </tr>
 <tr>
 <td><strong>Family</strong></td>
-<td>Spouse, children, parents, siblings (with details for each)</td>
+<td>Household members (spouse, children, parents) and links to other NPCs</td>
 </tr>
 <tr>
 <td><strong>Background</strong></td>
-<td>Military service, criminal record, security clearance level</td>
+<td>Military branch, rank, pay grade, MOS, unit hierarchy, foreign travel</td>
 </tr>
 <tr>
 <td><strong>Digital</strong></td>
-<td>Social media accounts, online presence, browsing habits</td>
+<td>Online accounts and credentials, assigned workstation</td>
 </tr>
 <tr>
 <td><strong>Psychological</strong></td>
-<td>Personality traits, insider threat indicators, vulnerabilities</td>
+<td>Mental-health scores, Reiss motivations, insider-threat indicators</td>
 </tr>
 <tr>
 <td><strong>Metadata</strong></td>
-<td>Campaign, enclave, team, assigned machine</td>
+<td>Campaign, enclave, team, assigned machine, scored preferences, attributes</td>
 </tr>
 </tbody>
 </table>
+<div class="admonition tip">
+<p class="admonition-title">Full field-by-field reference</p>
+<p>For the complete, authoritative list of every value on a persona — with types, enums, nested objects, and a full JSON example you can reference in scenarios — see the <a href="personas/"><strong>NPC Persona Reference</strong></a>.</p>
+</div>
 <div class="footnote">
 <hr />
 <ol>
@@ -2347,7 +2411,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

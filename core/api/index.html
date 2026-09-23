@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../assets/img/ghosts_new.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -31,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -541,6 +541,8 @@
       
         
       
+        
+      
     
     
     
@@ -648,6 +650,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../handle-cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Running a Single Handler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -696,10 +726,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
         
           
-          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
             
   
   
@@ -717,8 +747,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -898,10 +928,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_6" >
         
           
-          <label class="md-nav__link" for="__nav_4_3_6" id="__nav_4_3_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_4_6" id="__nav_4_4_6_label" tabindex="0">
             
   
   
@@ -919,8 +949,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3_6">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1300,10 +1330,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_15" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_15" >
         
           
-          <label class="md-nav__link" for="__nav_4_3_15" id="__nav_4_3_15_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_4_15" id="__nav_4_4_15_label" tabindex="0">
             
   
   
@@ -1321,8 +1351,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3_15">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_15">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2067,6 +2097,8 @@
       
         
       
+        
+      
     
     
     
@@ -2119,6 +2151,34 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../animator/personas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NPC Persona Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -2425,7 +2485,7 @@ docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> 
 <tbody>
 <tr>
 <td><code>N8N_API_URL</code></td>
-<td><code>http://host.docker.internal:5678/api/v1/workflows</code></td>
+<td><code>http://ghosts-n8n:5678/api/v1/workflows</code></td>
 <td>n8n REST API endpoint (used by the API to list and validate workflows)</td>
 </tr>
 <tr>
@@ -2435,13 +2495,13 @@ docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> 
 </tr>
 <tr>
 <td><code>WEB_API_URL</code></td>
-<td><code>http://host.docker.internal:5000/api</code></td>
-<td>GHOSTS API URL served to the frontend container</td>
+<td><code>http://localhost:5000/api</code></td>
+<td>GHOSTS API URL served to the frontend (must be reachable by the browser)</td>
 </tr>
 <tr>
 <td><code>WEB_N8N_API_URL</code></td>
-<td><code>http://host.docker.internal:5678</code></td>
-<td>n8n base URL served to the frontend container</td>
+<td><code>http://localhost:5678</code></td>
+<td>n8n base URL served to the frontend (must be reachable by the browser)</td>
 </tr>
 <tr>
 <td><code>POSTGRES_PASSWORD</code></td>
@@ -2791,7 +2851,7 @@ docker<span class="w"> </span>compose<span class="w"> </span>restart<span class=
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
