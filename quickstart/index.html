@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../assets/img/ghosts_new.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1781,6 +1781,8 @@
       
         
       
+        
+      
     
     
     
@@ -1854,6 +1856,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../core/api/terrain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terrain (GraySpace)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1905,6 +1935,8 @@
   
     
     
+      
+        
       
         
       
@@ -1968,6 +2000,34 @@
     
   
     GHOSTS Frontend
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../core/scenario-builder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Builder and authoring
   
 
     
@@ -2478,7 +2538,7 @@ docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> 
 </tr>
 <tr>
 <td><strong>Universal</strong></td>
-<td><a href="https://dotnet.microsoft.com/download/dotnet/9.0">.NET 9</a></td>
+<td><a href="https://dotnet.microsoft.com/download/dotnet/11.0">.NET 11</a></td>
 <td>Windows, Linux, macOS</td>
 <td>Cross-platform, 38+ handlers. <strong>Default choice</strong> for Linux or mixed environments.</td>
 </tr>
@@ -2495,10 +2555,11 @@ docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> 
 </blockquote>
 <h3 id="prerequisites_1">Prerequisites<a class="headerlink" href="#prerequisites_1" title="Permanent link">&para;</a></h3>
 <p>Run clients as a <strong>regular user account</strong>, not as administrator or root, to produce realistic behavior and avoid permission issues with browser drivers.</p>
-<p>For browser automation, place the appropriate WebDriver binary in the same directory as the GHOSTS client binary:</p>
+<p>For browser automation, GHOSTS uses the WebDriver in the same directory as the GHOSTS client binary, falling back to <code>PATH</code> (or a download, if the host is online). Geckodriver is included; for Chrome or Edge, supply a driver that matches the installed browser version:</p>
 <ul>
 <li><strong>Firefox</strong>: <a href="https://github.com/mozilla/geckodriver/releases">Geckodriver</a></li>
 <li><strong>Chrome/Chromium</strong>: <a href="https://chromedriver.chromium.org/downloads">ChromeDriver</a></li>
+<li><strong>Edge</strong>: <a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">msedgedriver</a></li>
 </ul>
 <h3 id="windows-client"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows Client<a class="headerlink" href="#windows-client" title="Permanent link">&para;</a></h3>
 <p><strong>Requirements:</strong> <a href="https://go.microsoft.com/fwlink/?LinkId=2099467">.NET Framework 4.6.1 runtime</a> or later (runtime only, SDK not required).</p>
@@ -2513,7 +2574,7 @@ docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> 
 <li>Run <code>ghosts.exe</code></li>
 </ol>
 <h3 id="linux-universal-client"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.62 8.35c-.42.28-1.75 1.04-1.95 1.19-.39.31-.75.29-1.14-.01-.2-.16-1.53-.92-1.95-1.19-.48-.31-.45-.7.08-.92 1.64-.69 3.28-.64 4.91.03.49.21.51.6.05.9m7.22 7.28c-.93-2.09-2.2-3.99-3.84-5.66a4.3 4.3 0 0 1-1.06-1.88c-.1-.33-.17-.67-.24-1.01-.2-.88-.29-1.78-.7-2.61-.73-1.58-2-2.4-3.84-2.47-1.81.05-3.16.81-3.95 2.4-.21.43-.36.88-.46 1.34-.17.76-.32 1.55-.5 2.32-.15.65-.45 1.21-.96 1.71-1.61 1.57-2.9 3.37-3.88 5.35-.14.29-.28.58-.37.88-.19.66.29 1.12.99.96.44-.09.88-.18 1.3-.31.41-.15.57-.05.67.35.65 2.15 2.07 3.66 4.24 4.5 4.12 1.56 8.93-.66 9.97-4.58.07-.27.17-.37.47-.27.46.14.93.24 1.4.35.49.09.85-.16.92-.64.03-.26-.06-.49-.16-.73"/></svg></span> Linux / Universal Client<a class="headerlink" href="#linux-universal-client" title="Permanent link">&para;</a></h3>
-<p><strong>Requirements:</strong> <a href="https://dotnet.microsoft.com/download/dotnet/9.0">.NET 9 runtime</a> (runtime only, SDK not required).</p>
+<p><strong>Requirements:</strong> <a href="https://dotnet.microsoft.com/download/dotnet/11.0">.NET 11 runtime</a> (runtime only, SDK not required).</p>
 <p>For Ubuntu 24.04, use the <a href="https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-2404&amp;tabs=dotnet8">snap installation</a>.</p>
 <ol>
 <li><a href="https://github.com/cmu-sei/GHOSTS/releases/latest">Download the latest Universal client</a></li>
@@ -2664,10 +2725,10 @@ docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> 
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "toc.integrate"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>

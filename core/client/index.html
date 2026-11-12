@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../assets/img/ghosts_new.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1973,6 +1973,8 @@
       
         
       
+        
+      
     
     
     
@@ -2046,6 +2048,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/terrain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terrain (GraySpace)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2097,6 +2127,8 @@
   
     
     
+      
+        
       
         
       
@@ -2160,6 +2192,34 @@
     
   
     GHOSTS Frontend
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenario-builder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenario Builder and authoring
   
 
     
@@ -2492,7 +2552,7 @@
 </ul>
 <details class="info" open="open">
 <summary>Additional configuration required for web browsing</summary>
-<p>For Firefox or Chrome web browsing, download the appropriate automation driver: <a href="https://github.com/mozilla/geckodriver/releases">Geckodriver</a> for Firefox or <a href="https://chromedriver.chromium.org/downloads">Chromedriver</a> for Chrome.</p>
+<p>Geckodriver for Firefox is included. For Chrome or Edge web browsing, place a driver matching the installed browser version next to <code>ghosts.exe</code> (or on <code>PATH</code>): <a href="https://chromedriver.chromium.org/downloads">Chromedriver</a> for Chrome or <a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">msedgedriver</a> for Edge.</p>
 </details>
 <details class="info" open="open">
 <summary>Additional configuration required for email</summary>
@@ -2503,13 +2563,14 @@
 <p>RDP Handlers require <a href="https://github.com/cmu-sei/GHOSTS/issues/429#issuecomment-2403269945">registering AutoIt dlls</a>.</p>
 </details>
 <h2 id="linux-client">Linux Client<a class="headerlink" href="#linux-client" title="Permanent link">&para;</a></h2>
-<p>GHOSTS on Linux requires the <a href="https://dotnet.microsoft.com/download">Microsoft dotnetcore runtime version 8.0</a>. We have tested with Ubuntu 24.04 using the <a href="https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-2404&amp;tabs=dotnet8">snap instructions here</a>, but other distributions should work.</p>
+<p>GHOSTS on Linux requires the <a href="https://dotnet.microsoft.com/download">Microsoft .NET runtime version 10.0</a>. We have tested with Ubuntu 24.04 using the <a href="https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-2404&amp;tabs=dotnet8">snap instructions here</a>, but other distributions should work.</p>
 <h3 id="linux-installation">Linux Installation<a class="headerlink" href="#linux-installation" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://github.com/cmu-sei/GHOSTS/releases/latest">Download the latest Linux client</a> and unzip it to a folder such as <code>~/ghosts</code>.</li>
 <li>Running the client as root may cause display issues with web browsers.</li>
 </ul>
 <h3 id="linux-service-configuration">Linux Service Configuration<a class="headerlink" href="#linux-service-configuration" title="Permanent link">&para;</a></h3>
+<p><code>configuration/client-install/linux/install.sh</code> does all of the steps below in one command: it unpacks the client, writes its config, and installs and starts the service. See <code>configuration/client-install/README.md</code>.</p>
 <p>To ensure the GHOSTS client runs automatically on system startup, you can configure it as a service using <code>systemd</code>.</p>
 <h4 id="step-1-create-the-service-file">Step 1: Create the Service File<a class="headerlink" href="#step-1-create-the-service-file" title="Permanent link">&para;</a></h4>
 <p>Create a new service file for the GHOSTS client by running the following command:</p>
@@ -2522,7 +2583,7 @@
 <span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
 
 <span class="k">[Service]</span>
-<span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/dotnet /path/to/ghosts/ghosts.client.linux.dll</span>
+<span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/dotnet /path/to/ghosts/Ghosts.Client.Universal.dll</span>
 <span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/path/to/ghosts</span>
 <span class="na">Restart</span><span class="o">=</span><span class="s">always</span>
 <span class="na">User</span><span class="o">=</span><span class="s">ghosts_user</span>
@@ -2697,6 +2758,7 @@
 <span class="nt">HandlersIsEnabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="nt">DisableStartup</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
 </code></pre></div>
+<p><code>ResourceControl.ManageProcesses</code> (default <code>true</code>) lets GHOSTS close the applications its timeline handlers run, such as browsers and their drivers and Office apps. This happens at startup, at shutdown, when a timeline is stopped, and when a handler goes idle outside its <code>UtcTimeOn</code>/<code>UtcTimeOff</code> window (Outlook is left open then). Processes are matched by name, so this also closes copies of those applications that GHOSTS did not start. On Windows, only processes in GHOSTS' own session are closed, so when GHOSTS runs in a user's session, services, SYSTEM tasks and other users' sessions are left alone. Shells (<code>cmd</code>, <code>powershell</code>) and <code>curl</code> are not closed by name, since their handlers wait for them to exit. Set it to <code>false</code> on machines where people work alongside GHOSTS. <code>ResourceControl.ManageBrowserProcesses</code> (default <code>false</code>) additionally lets the universal client close excess browser processes while running.</p>
 <hr />
 <h3 id="timeline-configuration">Timeline configuration<a class="headerlink" href="#timeline-configuration" title="Permanent link">&para;</a></h3>
 <p>The <code>timeline.{json|yaml}</code> file defines the agent’s daily tasks, such as browsing websites, creating documents, and executing commands. The default settings provide a solid starting point, showcasing a variety of possible configurations. However, the customization options are vast—so feel free to experiment and tailor the setup to suit your needs.</p>
@@ -2827,7 +2889,7 @@
 <li><strong>Just-In-Time Activities</strong>: Clients also support just-in-time activities. Any files placed in the <code>instance/timeline/in</code> folder will be picked up, executed, and then moved to the <code>out</code> folder once complete. This doesn’t affect the default timeline.</li>
 </ul>
 <h3 id="can-i-reset-a-client-on-a-machine">Can I reset a client on a machine?<a class="headerlink" href="#can-i-reset-a-client-on-a-machine" title="Permanent link">&para;</a></h3>
-<p>Yes, launching a new instance of GHOSTS will automatically kill the previous one along with all associated tasks (e.g., Word, PowerShell instances). Only one instance of GHOSTS will run on a client machine at a time.</p>
+<p>Yes, launching a new instance of GHOSTS will automatically kill the previous one (on Windows, only one in the same session), along with its child processes and the applications its timeline runs (e.g., Word). Only one instance of GHOSTS runs per machine (per session on Windows) at a time.</p>
 <p><strong>Windows:</strong> Run the <code>kill-ghosts.bat</code> script included in the distribution.</p>
 <p><strong>Linux/macOS:</strong> Run the <code>kill-ghosts.sh</code> script:
 <div class="highlight"><pre><span></span><code>chmod<span class="w"> </span>+x<span class="w"> </span>kill-ghosts.sh
@@ -2836,7 +2898,7 @@
 <p>Both scripts stop the GHOSTS client and any browser/driver processes it spawned.</p>
 <h3 id="universallinux-client-wont-start">Universal/Linux Client Won't Start<a class="headerlink" href="#universallinux-client-wont-start" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Check .NET version:</strong> Run <code>dotnet --version</code> and confirm .NET 9 (or later) is installed. The Universal client does not run on .NET 8.</li>
+<li><strong>Check .NET version:</strong> Run <code>dotnet --version</code> and confirm .NET 11 (or later) is installed. The Universal client targets .NET 11.</li>
 <li><strong>Permission denied:</strong> Ensure <code>ghosts.client.universal.dll</code> is readable. Do not run as root — browser drivers may fail under root.</li>
 <li><strong>Missing libicu:</strong> On minimal Linux images, install ICU: <code>sudo apt install libicu-dev</code> (Debian/Ubuntu) or <code>sudo dnf install libicu</code> (Fedora/RHEL).</li>
 <li><strong>Configuration errors:</strong> Verify <code>config/application.yaml</code> exists and <code>ApiRootUrl</code> points to a reachable API (include the <code>/api</code> suffix).</li>
@@ -2979,10 +3041,10 @@ dotnet<span class="w"> </span>ghosts.client.universal.dll<span class="w"> </span
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "toc.integrate"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>
